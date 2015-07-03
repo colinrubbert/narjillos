@@ -19,7 +19,7 @@ public class Atmosphere {
 	public Atmosphere(int initialElementLevels) {
 		this.saturationElementLevels = initialElementLevels * 3;
 		levels.put(OXYGEN, initialElementLevels);
-		levels.put(HYDROGEN, initialElementLevels);
+		levels.put(HYDROGEN, 0);
 		levels.put(NITROGEN, initialElementLevels);
 	}
 

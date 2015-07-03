@@ -6,7 +6,9 @@ dna:
   # happening is mutation_rate. If it does mutate, then the
   # gene's value is either incremented or decremented by a
   # random amount in the range [0, mutation_range].
-  mutation_rate: 0.073
+  #mutation_rate: 0.073
+  mutation_rate: 0
+
   mutation_range: 15.0
 
 physics:
@@ -40,7 +42,7 @@ creature:
 
   # A creature cannot live more than max_lifespan ticks, and it
   # cannot reproduce before mature_age ticks.
-  max_lifespan: 100000
+  max_lifespan: 250000
   mature_age: 5000
 
   # The base frequency of a creature's wave is base_wave_frequency
@@ -136,5 +138,5 @@ experiment:
   # Every sample_interval_ticks, an experiment reports its
   # current status on the console. Every save_interval_seconds,
   # it saves its state to an .exp file.
-  sample_interval_ticks: 10000
+  sample_interval_ticks: 1000
   save_interval_seconds: 600
